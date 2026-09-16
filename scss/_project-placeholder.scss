@@ -1,0 +1,25 @@
+
+.project-placeholder {
+  position: relative;
+  min-height: calc(100vh - var(--header-height) - 220px);
+  min-height: calc(100dvh - var(--header-height) - 220px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-placeholder-title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 48px;
+  letter-spacing: -0.02em;
+  margin-top: 32px;
+}
+
+.project-placeholder-text {
+  max-width: 480px;
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--gray-text);
+}

@@ -1,0 +1,44 @@
+@use 'variables' as *;
+
+
+.breadcrumbs {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.breadcrumbs-inner {
+  pointer-events: none;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  font-size: 13px;
+  pointer-events: auto;
+  width: fit-content;
+}
+
+.breadcrumbs-link {
+  color: var(--gray-text);
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.breadcrumbs-sep {
+  color: var(--gray-line);
+}
+
+.breadcrumbs-current {
+  color: var(--dark);
+  font-weight: 500;
+}
